@@ -4,6 +4,7 @@ class MaximumUnitsOnATruck:
     def __init__(self, boxTypes: List[List[int]], truckSize: int):
         self.boxTypes = boxTypes
         self.truckSize = truckSize        
+    
     def calculate_units(self)->int:
         temp_list = sorted(self.boxTypes, key=lambda x: x[1], reverse=True)
         sum = 0
